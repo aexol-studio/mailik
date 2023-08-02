@@ -3,6 +3,9 @@
   "references": [
     {
       "path": "./packages/sdk"
+    },
+    {
+      "path": "./packages/playground"
     }
   ]
 }
