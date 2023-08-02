@@ -37,12 +37,12 @@ window.onload = () => {
   mailSubjectInput.addEventListener("change", handleDisable);
 
   submitButton?.addEventListener("click", async () => {
-    const dupa = await Mailik(projectIdinput.value).send({
+    const mailikResult = await Mailik(projectIdinput.value).send({
       body: mailBodyInput.value,
       replyTo: mailReplyToInput.value,
       subject: mailSubjectInput.value,
     });
-    console.log();
-    result.innerText = JSON.stringify(dupa, null, 1);
+
+    result.innerText = JSON.stringify(mailikResult, null, 1);
   });
 };
