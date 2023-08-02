@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "build": "npm run build --ws --if-present",
-    "zeus": "npm run zeus -w packages/sdk"
+    "zeus": "npm run zeus -w packages/sdk",
+    "dev": "npm run start -w playground2"
   },
   "author": "aexol-studio",
   "license": "MIT",
@@ -25,7 +26,8 @@
     "typescript-transform-paths": "^3.3.1"
   },
   "workspaces": [
-    "./packages/sdk"
+    "./packages/sdk",
+    "./packages/playground"
   ],
   "devDependencies": {
     "@types/node-fetch": "^2.6.4",

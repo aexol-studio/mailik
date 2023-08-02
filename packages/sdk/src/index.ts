@@ -1,22 +1,27 @@
 import { MailInputType } from "./selectors.js";
-import { Chain } from "./zeus/index.js";
-
+import fetch from "cross-fetch";
 const API = "https://mailik.aexol.work/graphql";
 
-const chain = (option: "query" | "mutation") =>
-  Chain(API, {
-    headers: {
-      "Content-type": "application/json",
-    },
-  })(option);
-
-const Malilik = (publicKey: string) => {
+const Mailik = (publicKey: string) => {
   const send = async (mail: MailInputType) => {
     try {
-      const response = await chain("mutation")({
-        mail: { sendMail: [{ mail: { ...mail, publicKey } }, true] },
-      });
-      if (response.mail?.sendMail) {
+      const response = await fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          query: `mutation($mail:MailInput!)  { mail  { sendMail ( mail: $mail ) } }`,
+          variables: {
+            mail: {
+              body: mail.body,
+              subject: mail.subject,
+              replyTo: mail.replyTo,
+              publicKey,
+            },
+          },
+        }),
+      }).then((res) => res.json());
+
+      if (response.data.mail?.sendMail) {
         return {
           status: "OK",
           message: "Mail sent successfully",
@@ -24,7 +29,11 @@ const Malilik = (publicKey: string) => {
       } else {
         return {
           status: "FAILED",
-          message: "For some reason backend didn't sent this mail",
+          message: `For some reason backend didn't sent this mail. Error: ${
+            response.errors[0].message.split(":")[1]
+          }
+         
+          `,
         };
       }
     } catch (e: any) {
@@ -42,4 +51,4 @@ const Malilik = (publicKey: string) => {
   };
   return { send };
 };
-export default Malilik;
+export default Mailik;
