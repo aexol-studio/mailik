@@ -1,6 +1,7 @@
-import { MailInputType } from "./selectors.js";
 import fetch from "cross-fetch";
 const API = "https://mailik.aexol.work/graphql";
+
+type MailInputType = { body: string; subject: string; replyTo: string };
 
 const Mailik = (publicKey: string) => {
   const send = async (mail: MailInputType) => {
