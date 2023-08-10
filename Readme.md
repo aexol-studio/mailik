@@ -10,22 +10,23 @@ Mailik is small library for sending emails via yours websites. With our simple S
 ### 1. Installing and using Mailik in yours project
 
 Instal Mailik via npm
-
-    npm i @mailik/sdk
-
+```sh
+$ npm i @mailik/sdk
+```
 Import Mailik to yours file
-
-    import Mailik from "@mailik/sdk";
-
+```ts
+import Mailik from "@mailik/sdk";
+```
 Usage
+```ts
+const result = await Mailik("yours-project-public-key").send({
+    subject: "Mail subject",
+    body: "Mail body",
+    replyTo: "To who recipient should reply",
+});
+```
 
-        const result = await Mailik("yours-project-public-key").send({
-        subject: "Mail subject",
-        body: "Mail body",
-        replyTo: "To who recipient should reply",
-        });
-
-### 2. Create account [here](https://develop.mailik.pages.dev/pl/auth/login) or login via google account.
+### 2. Create account [here](https://develop.mailik.pages.dev/pl/auth/login)
 
 ### 3. Create yours first project group.
 
