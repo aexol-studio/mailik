@@ -11,6 +11,9 @@
   "keywords": [],
   "license": "MIT",
   "author": "aexol-studio",
+  "alias": {
+    "process": false
+  },
   "dependencies": {
     "parcel": "latest",
     "@mailik/sdk": "^0.0.1"
