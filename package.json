@@ -2,7 +2,6 @@
   "name": "@mailik/mono-repo",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
   "type": "module",
   "scripts": {
     "build": "npm run build --ws --if-present",

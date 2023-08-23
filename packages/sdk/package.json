@@ -2,7 +2,7 @@
   "name": "@mailik/sdk",
   "version": "0.0.4",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
   "type": "module",
   "scripts": {
     "build": "rimraf lib tsconfig.build.tsbuildinfo && ttsc --build tsconfig.build.json",
