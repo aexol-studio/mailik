@@ -15,7 +15,8 @@
     "process": false
   },
   "dependencies": {
+    "@mailik/sdk": "^0.0.1",
     "parcel": "latest",
-    "@mailik/sdk": "^0.0.1"
+    "stream-http": "^3.2.0"
   }
 }
