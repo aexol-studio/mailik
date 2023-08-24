@@ -1,5 +1,5 @@
 import fetch from "cross-fetch";
-const API = "https://mailik.aexol.work/graphql";
+const API = "https://backend.mailik.dev/graphql";
 
 type MailInputType = { body: string; subject: string; replyTo: string };
 
