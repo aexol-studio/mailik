@@ -41,10 +41,11 @@ Each project must have:
 - name
 - for which project group belongs
 - at least one e-mail address for sending messages
-
-![Project](/images/2.png "Project")
-
+  
 Project can have multiple email adresses where emails from your website will be send.
-
 You can add URLs from which sending emails for a specific project will be allowed, you will be notified if someone will try to send emails with yours project public key from not allowed websites
+
+![Project](/images/projects.png "Projects")
+
+
 
