@@ -1,13 +1,13 @@
-# What is Mailik?
+## What is Mailik?
 
-Mailik is small library for sending emails via yours websites. With our simple SDK we are providing system for managing many projects in yours organization.
+Mailik is small library for sending emails via yours websites whch via simple SDK provide a easy way for managing projects, apps, landigpages forms in yours organization. No server code required.
 
 &nbsp;
 &nbsp;
 
-# Usage
+## Usage
 
-### 1. Installing and using Mailik in yours project
+#### 1. Installation & usage
 
 Instal Mailik via npm
 ```sh
@@ -26,15 +26,16 @@ const result = await Mailik("yours-project-public-key").send({
 });
 ```
 
-### 2. Create account [here](https://mailik.dev/eu/auth/login)
+#### 2. Create account [here](https://mailik.dev/eu/auth/login)
 
-### 3. Create yours first project group.
-
-![Project group](/images/1.png "Project group")
+#### 3. Create yours first project group
 
 Project groups are simple way for organizing yours work. You can have multiple projects in one group where each project is setup for diffrent environment (development, production, etc.).
 
-### 4. Creating first project
+![Project group](/images/group.png "Project group")
+
+
+#### 4. Creating first project
 
 Each project must have:
 
