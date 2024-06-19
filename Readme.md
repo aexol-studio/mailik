@@ -7,7 +7,7 @@ Mailik is small library for sending emails via yours websites whch via simple SD
 
 ## Usage
 
-#### 1. Installation & usage
+### 1. Installation & usage
 
 Instal Mailik via npm
 ```sh
@@ -26,16 +26,16 @@ const result = await Mailik("yours-project-public-key").send({
 });
 ```
 
-#### 2. Create account [here](https://mailik.dev/eu/auth/login)
+### 2. Create account [here](https://mailik.dev/eu/auth/login)
 
-#### 3. Create yours first project group
+### 3. Create yours first project group
 
 Project groups are simple way for organizing yours work. You can have multiple projects in one group where each project is setup for diffrent environment (development, production, etc.).
 
 ![Project group](/images/group.png "Project group")
 
 
-#### 4. Creating first project
+### 4. Creating first project
 
 Each project must have:
 
