@@ -27,7 +27,7 @@ const result = await Mailik("yours-project-public-key").send({
 ```
 
 ### 2. Create account
-Go to [https://mailik.dev/eu/auth/login](https://mailik.dev/eu/auth/login) and create an account.
+Go to [https://mailik.dev](https://mailik.dev/) and create an account.
 
 ### 3. Create yours first project group
 
