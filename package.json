@@ -28,7 +28,7 @@
     "./packages/playground"
   ],
   "devDependencies": {
-    "@types/node-fetch": "^2.6.4",
+    "@types/node": "^20.4.5",
     "@types/ws": "^8.5.5"
   }
 }
